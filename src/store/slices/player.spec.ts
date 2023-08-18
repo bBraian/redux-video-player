@@ -1,9 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import { player as reducer, play, next } from './player'
+import { player as reducer, play, next, PlayerState } from './player'
 
-const exampleState = {
+const exampleState: PlayerState = {
     course: {
-        modules: [{ id: '1', title: 'Iniciando com React', lessons: [{ id: 'Pj8dPeameYo', title: 'CSS Global', duration: '03:23' }, { id: '8KBq2vhwbac', title: 'Form de comentários', duration: '11:34' },], }, { id: '2', title: 'Estrutura da aplicação', lessons: [{ id: 'h5JA3wfuW1k', title: 'Interações no JSX', duration: '06:33' }, { id: '1G0vSTqWELg', title: 'Utilizando estado', duration: '09:12' },], },]
+        id: 1,
+        modules: [{ id: 1, title: 'Iniciando com React', lessons: [{ id: 'Pj8dPeameYo', title: 'CSS Global', duration: '03:23' }, { id: '8KBq2vhwbac', title: 'Form de comentários', duration: '11:34' },], }, { id: 2, title: 'Estrutura da aplicação', lessons: [{ id: 'h5JA3wfuW1k', title: 'Interações no JSX', duration: '06:33' }, { id: '1G0vSTqWELg', title: 'Utilizando estado', duration: '09:12' },], },]
     },
     currentModuleIndex: 0,
     currentLessonIndex: 0
