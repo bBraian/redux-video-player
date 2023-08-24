@@ -15,11 +15,11 @@ export function Player() {
 
     useEffect(() => {
         dispatch(loadCourse())
-    })
+    }, [])
 
     useEffect(() => {
         if(currentLesson) {
-            document.title = currentLesson.title
+            document.title = `Aula: ${currentLesson.title}`
         }
     }, [currentLesson])
 
