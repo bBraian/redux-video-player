@@ -40,7 +40,7 @@ export function Player() {
                     <div className="flex-1">
                         <Video />
                     </div>
-                    <aside className="lg:w-80 w-auto lg:absolute relative top-0 bottom-0 right-0 border-l border-zinc-800 bg-zinc-900 divide-y-2 divide-zinc-900 overflow-y-scroll scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-700 lg:max-h-none max-h-80">
+                    <aside className="lg:w-80 w-auto lg:absolute relative top-0 bottom-0 right-0 border-l border-zinc-800 bg-zinc-900 divide-y-2 divide-zinc-900 overflow-y-scroll scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-700 lg:max-h-none max-h-64">
                         { modules && modules.map((module, index) => {
                             return (
                                 <Module moduleIndex={index} key={module.id} title={module.title} amountOfLessons={module.lessons.length} />
